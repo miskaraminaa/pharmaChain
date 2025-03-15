@@ -1,0 +1,111 @@
+.fancyButton {
+    padding: 15px;
+    font-size: 18px;
+    color: #FFF;
+    background-color: #8A817C;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.fancyButton:hover {
+    background-color: #6B705C;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fancyButton:active {
+    transform: scale(1.15);
+}
+
+.burst {
+    animation: burstEffect 0.5s forwards;
+}
+
+@keyframes burstEffect {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    50% {
+        transform: scale(1.3);
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    100% {
+        transform: scale(0);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+}
+
+.supplierContainer,
+.addRawMaterialLotContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://example.com/battery_background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.supplierContent,
+.addRawMaterialLotContent {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+}
+
+form button {
+    padding: 15px;
+    font-size: 18px;
+    color: #FFF;
+    background-color: #8A817C;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+    background-color: #6B705C;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+form button:active {
+    transform: scale(1.15);
+}
